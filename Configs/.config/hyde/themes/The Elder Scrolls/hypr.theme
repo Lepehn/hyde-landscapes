@@ -18,33 +18,46 @@ exec = Hyde cursor theme '${CURSOR_THEME}' size $CURSOR_SIZE
 #exec = Hyde sddm set $SDDM-THEME
 
 general {
-    gaps_in = 3
-    gaps_out = 8
+    gaps_in = 4
+    gaps_out = 10
     border_size = 2
-    col.active_border = rgba(118911ff) rgba(295252ff) 45deg
-    col.inactive_border = rgba(0A1010ff) rgba(1A2525ff) 45deg
+    col.active_border = rgba(0D9AC1FF) rgba(0B4C5DFF) 45deg
+    col.inactive_border = rgba(4A3B4ACC) rgba(1A2B3DCC) 45deg
     layout = dwindle
     resize_on_border = true
 }
 
 group {
-    col.border_active = rgba(118911ff) rgba(295252ff) 45deg
-    col.border_inactive = rgba(0A1010cc) rgba(1A2525cc) 45deg
-    col.border_locked_active = rgba(FFFFFFff) rgba(FFFFFFff) 45deg
-    col.border_locked_inactive = rgba(FFFFFFcc) rgba(FFFFFFcc) 45deg
+    col.border_active = rgba(0D9AC1FF) rgba(0B4C5DFF) 45deg
+    col.border_inactive = rgba(4A3B4ACC) rgba(1A2B3DCC) 45deg
+    col.border_locked_active = rgba(0D9AC1FF) rgba(0B4C5DFF) 45deg
+    col.border_locked_inactive = rgba(4A3B4ACC) rgba(1A2B3DCC) 45deg
 }
 
 decoration {
     rounding = 10
+    active_opacity = 0.9
+    inactive_opacity = 0.9
+
     blur {
         enabled = yes
         size = 4
-        passes = 2
+        passes = 4
+        noise = 0.02
         new_optimizations = on
         ignore_opacity = on
         xray = false
     }
+
     shadow {
         enabled = false
+        ignore_window = true
+        offset = 0 0
+        range = 15
+        render_power = 1
+        color = 0x80ffffff
     }
 }
+
+
+blurls = waybar
