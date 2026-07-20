@@ -1,9 +1,12 @@
 $HOME/.config/rofi/theme.rasi
 * {
-    main-bg:            #28432FB3;
-    main-fg:            #A5BF58E6;
-    main-br:            #A0B3D0E6;
-    main-ex:            #153550E6;
-    select-bg:          #A0B3D080;
-    select-fg:          #A0B3D0E6;
+    main-bg:            #2E3440AA; /* Dark Gray with more transparency */
+    main-fg:            #D8DEE9FF; /* Light Gray */
+    main-br:            #88C0D0A0; /* Frosted Cyan with more transparency */
+    main-ex:            #F38BA8BB; /* Muted Red with transparency */
+    select-bg:          #4C566AEE; /* Darker Blue Gray, slightly transparent */
+    select-fg:          #D8DEE9FF; /* Light Gray */
+    separatorcolor:     transparent;
+    border-color:       transparent;
+    font: "SF Pro Rounded 10";
 }
