@@ -8,12 +8,11 @@ $CURSOR_SIZE=26
 $FONT=SFProRounded 
 $FONT_STYLE=Regular
 
-# exec = gsettings set org.gnome.desktop.interface icon-theme '$ICON_THEME'
-# exec = gsettings set org.gnome.desktop.interface gtk-theme '$GTK_THEME'
-# exec = gsettings set org.gnome.desktop.interface color-scheme '$COLOR_SCHEME'
-# exec = gsettings set org.gnome.desktop.interface font-name '$FONT'
-# exec = Hyde cursor theme '$CURSOR_THEME' size $CURSOR_SIZE
-# exec = Hyde code theme '$CODE_THEME'
+exec = gsettings set org.gnome.desktop.interface icon-theme '${ICON_THEME}'
+exec = gsettings set org.gnome.desktop.interface gtk-theme '${GTK_THEME}'
+exec = gsettings set org.gnome.desktop.interface color-scheme '${COLOR_SCHEME}'
+exec = gsettings set org.gnome.desktop.interface font-name '${FONT}'
+exec = Hyde cursor theme '${CURSOR_THEME}' size $CURSOR_SIZE
 
 #Set the sddm theme here
 #exec = Hyde sddm set $SDDM-THEME
